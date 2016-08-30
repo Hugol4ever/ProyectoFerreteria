@@ -1,5 +1,0 @@
-c:\users\hugo_\documents\visual studio 2015\Projects\core\core\bin\Debug\core.dll
-c:\users\hugo_\documents\visual studio 2015\Projects\core\core\bin\Debug\core.pdb
-c:\users\hugo_\documents\visual studio 2015\Projects\core\core\obj\Debug\core.csprojResolveAssemblyReference.cache
-c:\users\hugo_\documents\visual studio 2015\Projects\core\core\obj\Debug\core.dll
-c:\users\hugo_\documents\visual studio 2015\Projects\core\core\obj\Debug\core.pdb
