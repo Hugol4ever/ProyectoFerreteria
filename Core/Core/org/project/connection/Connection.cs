@@ -7,7 +7,7 @@ using MySql.Data.MySqlClient;
 
 namespace Core.org.project.connection
 {
-    class Connection
+    public class Connection
     {
         //Atributos
         private String _url;
@@ -30,7 +30,7 @@ namespace Core.org.project.connection
             }
             catch(Exception ex)
             {
-                Console.WriteLine("Ocurrió un error: " + ex);
+                Console.WriteLine("Ocurrió un error en abrir(): " + ex);
             }
             return _conn;
         }
@@ -43,7 +43,7 @@ namespace Core.org.project.connection
             }
             catch(Exception ex)
             {
-                Console.WriteLine("Ocurrió un error: " + ex);
+                Console.WriteLine("Ocurrió un error en cerrar(): " + ex);
             }
         }
 
@@ -58,17 +58,20 @@ namespace Core.org.project.connection
 
             try
             {
-                String _Conn = "Server=" + _server + "; Database:" + _dataBase + "; Uid=" + _userName + "; " +
-                    "Pwd=" + _password;
-                this._conn = new MySqlConnection(_Conn);
+                MySqlConnectionStringBuilder builder = new MySqlConnectionStringBuilder();
+                builder.Server = _server;
+                builder.UserID = _userName;
+                builder.Password = _password;
+                builder.Database = _dataBase;
+                this._conn = new MySqlConnection(builder.ToString());
             }
             catch(Exception ex)
             {
-                Console.WriteLine("Ocurrió un error: " + ex);
+                Console.WriteLine("Ocurrió un error en el constructor: " + ex);
             }
         }
 
-        public Connection() : this("localhost", 3306, "BD_Ferreteria", "root", "root")
+        public Connection() : this("localhost", 3306, "BD2_Integradora", "root", "root")
         {
 
         }
