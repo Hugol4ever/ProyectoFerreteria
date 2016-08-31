@@ -1,13 +1,13 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using MySql.Data.MySqlClient;
 
-namespace Connection.org.project.MySql
+namespace Core
 {
-    class Conexion
+    class Class1
     {
         //Atributos
         private String _driverName;
@@ -27,7 +27,8 @@ namespace Connection.org.project.MySql
                 try
                 {
                     _con.Open();
-                }catch(Exception ex)
+                }
+                catch (Exception ex)
                 {
                     Console.WriteLine("Ocurrió un error: " + ex);
                 }
@@ -36,10 +37,10 @@ namespace Connection.org.project.MySql
         }
 
         //Constructor
-        public Conexion() : this("com.mysql.jdbc.Driver", "localhost", 3306, "BD_Ferreteria", "root", "root")
-        {}
+        public Class1() : this("com.mysql.jdbc.Driver", "localhost", 3306, "BD_Ferreteria", "root", "root")
+        { }
 
-        public Conexion(String driverName, String server, int port, String dataBase, String userName, String password)
+        public Class1(String driverName, String server, int port, String dataBase, String userName, String password)
         {
             _driverName = driverName;
             _server = server;
@@ -50,10 +51,11 @@ namespace Connection.org.project.MySql
 
             try
             {
-                String _connection = "Server=" + _server + "; Database=" + _dataBase + "; Uid=" + _userName + 
-                    "; Pwd=" + _password + ";";
+                String _connection = "Server=" + _server + "; Database=" + _dataBase + "; Uid=" + _userName +
+                    "; Pwd=" + _password + "; SslMode=None;";
                 _con = new MySqlConnection(_connection);
-            } catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 Console.WriteLine("Ocurrió un error: " + ex);
             }
