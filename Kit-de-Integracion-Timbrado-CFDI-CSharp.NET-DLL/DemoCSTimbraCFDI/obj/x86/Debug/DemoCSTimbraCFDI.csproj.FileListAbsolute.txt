@@ -26,3 +26,17 @@ C:\Users\Andrés\Documents\ProFact\TimbraCFDI\Kits de integración\Kit-de-Integr
 C:\Users\Andrés\Documents\ProFact\TimbraCFDI\Kits de integración\Kit-de-Integracion-Timbrado-CFDI-CSharp.NET-DLL\Kit-de-Integracion-Timbrado-CFDI-CSharp.NET-DLL\DemoCSTimbraCFDI\bin\Debug\DemoCSTimbraCFDI.exe
 C:\Users\Andrés\Documents\ProFact\TimbraCFDI\Kits de integración\Kit-de-Integracion-Timbrado-CFDI-CSharp.NET-DLL\Kit-de-Integracion-Timbrado-CFDI-CSharp.NET-DLL\DemoCSTimbraCFDI\bin\Debug\DemoCSTimbraCFDI.pdb
 C:\Users\Andrés\Documents\ProFact\TimbraCFDI\Kits de integración\Kit-de-Integracion-Timbrado-CFDI-CSharp.NET-DLL\Kit-de-Integracion-Timbrado-CFDI-CSharp.NET-DLL\DemoCSTimbraCFDI\bin\Debug\Profact.TimbraCFDI.dll
+C:\Users\hugo_\Documents\ProyectoFerreteria\Kit-de-Integracion-Timbrado-CFDI-CSharp.NET-DLL\DemoCSTimbraCFDI\bin\Debug\DemoCSTimbraCFDI.exe.config
+C:\Users\hugo_\Documents\ProyectoFerreteria\Kit-de-Integracion-Timbrado-CFDI-CSharp.NET-DLL\DemoCSTimbraCFDI\obj\x86\Debug\DemoCSTimbraCFDI.exe
+C:\Users\hugo_\Documents\ProyectoFerreteria\Kit-de-Integracion-Timbrado-CFDI-CSharp.NET-DLL\DemoCSTimbraCFDI\obj\x86\Debug\DemoCSTimbraCFDI.pdb
+C:\Users\hugo_\Documents\ProyectoFerreteria\Kit-de-Integracion-Timbrado-CFDI-CSharp.NET-DLL\DemoCSTimbraCFDI\bin\Debug\ArchivosPrueba\comprobanteSinTimbrar.xml
+C:\Users\hugo_\Documents\ProyectoFerreteria\Kit-de-Integracion-Timbrado-CFDI-CSharp.NET-DLL\DemoCSTimbraCFDI\bin\Debug\ArchivosPrueba\contraseña_llave_privada.txt
+C:\Users\hugo_\Documents\ProyectoFerreteria\Kit-de-Integracion-Timbrado-CFDI-CSharp.NET-DLL\DemoCSTimbraCFDI\bin\Debug\ArchivosPrueba\aaa010101aaa__csd_01.cer
+C:\Users\hugo_\Documents\ProyectoFerreteria\Kit-de-Integracion-Timbrado-CFDI-CSharp.NET-DLL\DemoCSTimbraCFDI\bin\Debug\ArchivosPrueba\aaa010101aaa__csd_01.key
+C:\Users\hugo_\Documents\ProyectoFerreteria\Kit-de-Integracion-Timbrado-CFDI-CSharp.NET-DLL\DemoCSTimbraCFDI\bin\Debug\DemoCSTimbraCFDI.exe
+C:\Users\hugo_\Documents\ProyectoFerreteria\Kit-de-Integracion-Timbrado-CFDI-CSharp.NET-DLL\DemoCSTimbraCFDI\bin\Debug\DemoCSTimbraCFDI.pdb
+C:\Users\hugo_\Documents\ProyectoFerreteria\Kit-de-Integracion-Timbrado-CFDI-CSharp.NET-DLL\DemoCSTimbraCFDI\bin\Debug\Profact.TimbraCFDI.dll
+C:\Users\hugo_\Documents\ProyectoFerreteria\Kit-de-Integracion-Timbrado-CFDI-CSharp.NET-DLL\DemoCSTimbraCFDI\obj\x86\Debug\DemoCSTimbraCFDI.csprojResolveAssemblyReference.cache
+C:\Users\hugo_\Documents\ProyectoFerreteria\Kit-de-Integracion-Timbrado-CFDI-CSharp.NET-DLL\DemoCSTimbraCFDI\obj\x86\Debug\DemoCSTimbraCFDI.Form1.resources
+C:\Users\hugo_\Documents\ProyectoFerreteria\Kit-de-Integracion-Timbrado-CFDI-CSharp.NET-DLL\DemoCSTimbraCFDI\obj\x86\Debug\DemoCSTimbraCFDI.Properties.Resources.resources
+C:\Users\hugo_\Documents\ProyectoFerreteria\Kit-de-Integracion-Timbrado-CFDI-CSharp.NET-DLL\DemoCSTimbraCFDI\obj\x86\Debug\DemoCSTimbraCFDI.csproj.GenerateResource.Cache

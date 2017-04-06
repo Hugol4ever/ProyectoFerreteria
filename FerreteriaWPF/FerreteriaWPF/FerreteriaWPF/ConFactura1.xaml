@@ -1,0 +1,216 @@
+﻿<Window x:Class="FerreteriaWPF.ConFactura1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FerreteriaWPF"
+        mc:Ignorable="d"
+        Title="ConFactura1" Height="577.5" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <TabControl x:Name="tabControl" HorizontalAlignment="Left" Height="539" VerticalAlignment="Top" Width="794">
+            <TabItem Header="Terminos">
+                <Grid Background="#FFE5E5E5">
+                    <Image x:Name="image" HorizontalAlignment="Left" Height="56" Margin="4,2,0,0" VerticalAlignment="Top" Width="67" Source="Icon/factura1.png"/>
+                    <Label x:Name="label" Content="Configuracion de factura electrónica" HorizontalAlignment="Left" Margin="71,-8,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
+                    <Label x:Name="label1" Content="Aceptar los terminos y condiciones del servicio de Factura Electronica" HorizontalAlignment="Left" Margin="76,32,0,0" VerticalAlignment="Top" Width="702" FontWeight="Bold"/>
+                    <Label x:Name="label2" Content="Antes de continuar, es necesario revise los terminos y condiciones dle servicio de facturacion electronica:" HorizontalAlignment="Left" Margin="10,63,0,0" VerticalAlignment="Top"/>
+                    <RichTextBox x:Name="richTextBox" IsReadOnly="True" HorizontalAlignment="Left" Height="356" Margin="10,94,0,0" VerticalAlignment="Top" Width="768" SpellCheck.IsEnabled="True">
+                        <FlowDocument>
+                            <Paragraph>El presente documento constituye un convenio entre usted como usuario de este software, EL USUARIO y EDGAR ARTURO FUENTES CRESPO, como titular de los derechos de autor del PROGRAMA.</Paragraph>
+                            <Paragraph>Al momento de utilizar el programa y la funcionalidad de emisión de facturas electrónicas (CFDI), usted QUEDA OBLIGADO EN LOS TERMINOS Y CONDICIONES DE ESTE CONVENIO, considerándose que usted acepta los mismos.  
+                            </Paragraph>
+                            <Paragraph>SI USTED NO ESTA DE ACUERDO CON LOS TERMINOS Y CONDICIONES DE ESTE CONVENIO, NO CONTINUE CON LA CONFIGURACIÓN.    
+
+                            </Paragraph>
+                            <Paragraph>1. EL USUARIO declara que cumple con los requisitos que establece el Código Fiscal de la Federación, la Normatividad aplicable, tal como las disposiciones de la RESOLUCIÓN MISCELÁNEA para la emisión de comprobantes fiscales digitales, y puede emitir facturas a través de medios digitales y que cuenta con su Inscripción en el R.F.C.  
+                            </Paragraph>
+                            <Paragraph>2. Es obligación de EL USUARIO verificar y corroborar la correcta emisión y validez de los comprobantes fiscales digitales que se generen usando EL PROGRAMA.  
+                            </Paragraph>
+                            <Paragraph>
+                                <Run Text="3. EL USUARIO se hace responsable de las facturas electrónicas generadas con EL PROGRAMA, de su resguardo, validez y con"/>
+                                <Run Text="trol deslindando a EDGAR ARTURO FUENTES CRESPO de cualquier responsabilidad legal, fiscal o de cualquier otra índole ocasionada por el uso del programa y sus funciones.  Es responsabilidad del usuario asegurarse del almacenaje correcto, seguro y confiable de las facturas electrónicas generadas con el EL PROGRAMA para cumplir con los requisitos fiscales establecidos por el SAT.  "/>
+                            </Paragraph>
+                            <Paragraph>
+                                <Run Text="4. EDGAR ARTURO FUENTES CRESPO compartirá con la empresa ProFact (Proveedores de Facturación Electrónica y Software, S.A. d"/>
+                                <Run Text="e C.V.) como Proveedor Autorizado de Certificación (PAC) con número de autorización del SAT 56688  usado por EL PROGRAMA para el timbrado, tu certificado de sellos, llave privada, contraseña de llave privada, Registro Federal de Contribuyente (R.F.C.), y toda factura únicamente con el propósito de habilitar el timbrado y cancelación de los comprobantes fiscales digitales (CFDI) generados por EL PROGRAMA."/>
+                            </Paragraph>
+                            <Paragraph>
+                                <Run Text="5. EDGAR ARTURO FUENTES CRESPO no se será responsable por la  disponibilidad y continuidad del funcionamiento de EL PROGRAMA cuando se trate de interrupciones o mal funcionamiento de las redes de Internet o bien cuando se requiera actualizar, mejorar o dar mantenimiento a la página de Internet de ProFact, aplicaciones o cualquier otro sistema o infraestructura relacionado con el servicio Facturación electrónica, así como por casos fortuitos o de fuerza mayor no provocados por EDGAR ARTURO FUENTES CRESPO."/>
+                            </Paragraph>
+                        </FlowDocument>
+                    </RichTextBox>
+                    <CheckBox x:Name="checkBox" Content="Acepto los terminos y condiciones del servicio de facturacion electronica." HorizontalAlignment="Left" Margin="10,464,0,0" VerticalAlignment="Top"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Emisores">
+                <Grid Background="#FFE5E5E5">
+                    <TabControl x:Name="tabControl1" HorizontalAlignment="Left" Height="501" VerticalAlignment="Top" Width="778">
+                        <TabItem Header="Francisco">
+                            <Grid Background="#FFE5E5E5">
+                                <Label x:Name="label3" Content="RFC:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+                                <Label x:Name="label4" Content="Nombre completo:" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top"/>
+                                <Label x:Name="label5" Content="Correo electronico:" HorizontalAlignment="Left" Margin="10,72,0,0" VerticalAlignment="Top"/>
+                                <Label x:Name="label6" Content="Calle:" HorizontalAlignment="Left" Margin="10,103,0,0" VerticalAlignment="Top"/>
+                                <Label x:Name="label7" Content="No. exterior" HorizontalAlignment="Left" Margin="10,134,0,0" VerticalAlignment="Top"/>
+                                <Label x:Name="label8" Content="No. interior" HorizontalAlignment="Left" Margin="10,165,0,0" VerticalAlignment="Top"/>
+                                <Label x:Name="label9" Content="Codigo postal:" HorizontalAlignment="Left" Margin="10,196,0,0" VerticalAlignment="Top"/>
+                                <Label x:Name="label10" Content="Colonia:" HorizontalAlignment="Left" Margin="10,227,0,0" VerticalAlignment="Top"/>
+                                <Label x:Name="label11" Content="Estado:" HorizontalAlignment="Left" Margin="10,258,0,0" VerticalAlignment="Top"/>
+                                <Label x:Name="label12" Content="Municipio:" HorizontalAlignment="Left" Margin="10,289,0,0" VerticalAlignment="Top"/>
+                                <Label x:Name="label13" Content="Regimen:" HorizontalAlignment="Left" Margin="10,320,0,0" VerticalAlignment="Top"/>
+                                <Label x:Name="label14" Content="Lugar de expedicion:" HorizontalAlignment="Left" Margin="10,351,0,0" VerticalAlignment="Top"/>
+                                <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="144,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210"/>
+                                <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="23" Margin="144,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="280"/>
+                                <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="23" Margin="144,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="280"/>
+                                <TextBox x:Name="textBox3" HorizontalAlignment="Left" Height="23" Margin="144,106,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="280"/>
+                                <TextBox x:Name="textBox4" HorizontalAlignment="Left" Height="23" Margin="144,137,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                                <TextBox x:Name="textBox5" HorizontalAlignment="Left" Height="23" Margin="144,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                                <TextBox x:Name="textBox6" HorizontalAlignment="Left" Height="23" Margin="144,199,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                                <TextBox x:Name="textBox7" HorizontalAlignment="Left" Height="23" Margin="144,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="280"/>
+                                <TextBox x:Name="textBox8" HorizontalAlignment="Left" Height="23" Margin="144,261,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210" TextChanged="textBox8_TextChanged"/>
+                                <TextBox x:Name="textBox9" HorizontalAlignment="Left" Height="23" Margin="144,292,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210"/>
+                                <TextBox x:Name="textBox10" HorizontalAlignment="Left" Height="23" Margin="144,323,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="280"/>
+                                <TextBox x:Name="textBox11" HorizontalAlignment="Left" Height="23" Margin="144,355,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="280"/>
+                                <Label x:Name="label15" Content="Certificado de sellos" HorizontalAlignment="Left" Margin="468,13,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+                                <Image x:Name="image1" HorizontalAlignment="Left" Height="64" Margin="468,34,0,0" VerticalAlignment="Top" Width="64" Source="Icon/diploma.png"/>
+                                <Button x:Name="button" BorderBrush="#FFDDDDDD" HorizontalAlignment="Left" Margin="557,57,0,0" VerticalAlignment="Top" Width="189">
+                                    <DockPanel>
+                                        <Image Source="Icon/research.png" Width="18" Height="18"></Image>
+                                        <TextBlock>Localizar certificado de sellos</TextBlock>
+                                    </DockPanel>
+                                </Button>
+                                <Image x:Name="image2" HorizontalAlignment="Left" Height="64" Margin="468,168,0,0" VerticalAlignment="Top" Width="64" Source="Icon/clave.png"/>
+                                <Label x:Name="label16" Content="Clave privada del certificado de sellos" HorizontalAlignment="Left" Margin="468,137,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+                                <Button x:Name="button1" BorderBrush="#FFDDDDDD" HorizontalAlignment="Left" Margin="557,171,0,0" VerticalAlignment="Top" Width="189">
+                                    <DockPanel>
+                                        <Image Source="Icon/research.png" Width="18" Height="18"></Image>
+                                        <TextBlock>Localizar clave privada</TextBlock>
+                                    </DockPanel>
+                                </Button>
+                                <Label x:Name="label17" Content="Contraseña de la clave privada:" HorizontalAlignment="Left" Margin="557,193,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+                                <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Margin="557,219,0,0" VerticalAlignment="Top" Width="189"/>
+                                <Button x:Name="button2" BorderBrush="#FFDDDDDD" HorizontalAlignment="Left" Margin="499,418,0,0" VerticalAlignment="Top" Width="121" Click="button2_Click">
+                                    <DockPanel>
+                                        <Image Source="Icon/checked (1).png" Width="18" Height="18"></Image>
+                                        <TextBlock>Guardar emisor</TextBlock>
+                                    </DockPanel>
+                                </Button>
+                                <Button x:Name="button3" BorderBrush="#FFDDDDDD" HorizontalAlignment="Left" Margin="625,418,0,0" VerticalAlignment="Top" Width="121">
+                                    <DockPanel>
+                                        <Image Source="Icon/error.png" Width="18" Height="18"></Image>
+                                        <TextBlock>Cancelar</TextBlock>
+                                    </DockPanel>
+                                </Button>
+                                <Label x:Name="label33" Content="Telefono:" HorizontalAlignment="Left" Margin="10,382,0,0" VerticalAlignment="Top"/>
+                                <TextBox x:Name="textBox24" HorizontalAlignment="Left" Height="23" Margin="144,385,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Luis">
+                            <Grid Background="#FFE5E5E5">
+                                <Label x:Name="label18" Content="RFC:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+                                <Label x:Name="label19" Content="Nombre:" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top"/>
+                                <Label x:Name="label20" Content="Correo electronico:" HorizontalAlignment="Left" Margin="10,72,0,0" VerticalAlignment="Top"/>
+                                <Label x:Name="label21" Content="Direccion:" HorizontalAlignment="Left" Margin="10,103,0,0" VerticalAlignment="Top"/>
+                                <Label x:Name="label22" Content="No. exterior" HorizontalAlignment="Left" Margin="10,134,0,0" VerticalAlignment="Top"/>
+                                <Label x:Name="label23" Content="No. interior" HorizontalAlignment="Left" Margin="10,165,0,0" VerticalAlignment="Top"/>
+                                <Label x:Name="label24" Content="Codigo postal:" HorizontalAlignment="Left" Margin="10,196,0,0" VerticalAlignment="Top"/>
+                                <Label x:Name="label25" Content="Colonia:" HorizontalAlignment="Left" Margin="10,227,0,0" VerticalAlignment="Top"/>
+                                <Label x:Name="label26" Content="Estado:" HorizontalAlignment="Left" Margin="10,258,0,0" VerticalAlignment="Top"/>
+                                <Label x:Name="label27" Content="Municipio:" HorizontalAlignment="Left" Margin="10,289,0,0" VerticalAlignment="Top"/>
+                                <Label x:Name="label28" Content="Regimen:" HorizontalAlignment="Left" Margin="10,320,0,0" VerticalAlignment="Top"/>
+                                <Label x:Name="label29" Content="Lugar de expedicion:" HorizontalAlignment="Left" Margin="10,351,0,0" VerticalAlignment="Top"/>
+                                <TextBox x:Name="textBox23" HorizontalAlignment="Left" Height="23" Margin="144,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210"/>
+                                <TextBox x:Name="textBox12" HorizontalAlignment="Left" Height="23" Margin="144,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="280"/>
+                                <TextBox x:Name="textBox13" HorizontalAlignment="Left" Height="23" Margin="144,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="280"/>
+                                <TextBox x:Name="textBox14" HorizontalAlignment="Left" Height="23" Margin="144,106,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="280"/>
+                                <TextBox x:Name="textBox15" HorizontalAlignment="Left" Height="23" Margin="144,137,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                                <TextBox x:Name="textBox16" HorizontalAlignment="Left" Height="23" Margin="144,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                                <TextBox x:Name="textBox17" HorizontalAlignment="Left" Height="23" Margin="144,199,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                                <TextBox x:Name="textBox18" HorizontalAlignment="Left" Height="23" Margin="144,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="280"/>
+                                <TextBox x:Name="textBox19" HorizontalAlignment="Left" Height="23" Margin="144,261,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210" TextChanged="textBox8_TextChanged"/>
+                                <TextBox x:Name="textBox20" HorizontalAlignment="Left" Height="23" Margin="144,292,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210"/>
+                                <TextBox x:Name="textBox21" HorizontalAlignment="Left" Height="23" Margin="144,323,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="280"/>
+                                <TextBox x:Name="textBox22" HorizontalAlignment="Left" Height="23" Margin="144,355,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="280"/>
+                                <Label x:Name="label30" Content="Certificado de sellos" HorizontalAlignment="Left" Margin="468,13,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+                                <Image x:Name="image3" HorizontalAlignment="Left" Height="64" Margin="468,34,0,0" VerticalAlignment="Top" Width="64" Source="Icon/diploma.png"/>
+                                <Button x:Name="button4" BorderBrush="#FFDDDDDD" HorizontalAlignment="Left" Margin="557,57,0,0" VerticalAlignment="Top" Width="189">
+                                    <DockPanel>
+                                        <Image Source="Icon/research.png" Width="18" Height="18"></Image>
+                                        <TextBlock>Localizar certificado de sellos</TextBlock>
+                                    </DockPanel>
+                                </Button>
+                                <Image x:Name="image4" HorizontalAlignment="Left" Height="64" Margin="468,168,0,0" VerticalAlignment="Top" Width="64" Source="Icon/clave.png"/>
+                                <Label x:Name="label31" Content="Clave privada del certificado de sellos" HorizontalAlignment="Left" Margin="468,137,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+                                <Button x:Name="button5" BorderBrush="#FFDDDDDD" HorizontalAlignment="Left" Margin="557,171,0,0" VerticalAlignment="Top" Width="189">
+                                    <DockPanel>
+                                        <Image Source="Icon/research.png" Width="18" Height="18"></Image>
+                                        <TextBlock>Localizar clave privada</TextBlock>
+                                    </DockPanel>
+                                </Button>
+                                <Label x:Name="label32" Content="Contraseña de la clave privada:" HorizontalAlignment="Left" Margin="557,193,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+                                <PasswordBox x:Name="passwordBox2" HorizontalAlignment="Left" Margin="557,219,0,0" VerticalAlignment="Top" Width="189"/>
+                                <Button x:Name="button6" BorderBrush="#FFDDDDDD" HorizontalAlignment="Left" Margin="499,418,0,0" VerticalAlignment="Top" Width="121">
+                                    <DockPanel>
+                                        <Image Source="Icon/checked (1).png" Width="18" Height="18"></Image>
+                                        <TextBlock>Guardar emisor</TextBlock>
+                                    </DockPanel>
+                                </Button>
+                                <Button x:Name="button7" BorderBrush="#FFDDDDDD" HorizontalAlignment="Left" Margin="625,418,0,0" VerticalAlignment="Top" Width="121">
+                                    <DockPanel>
+                                        <Image Source="Icon/error.png" Width="18" Height="18"></Image>
+                                        <TextBlock>Cancelar</TextBlock>
+                                    </DockPanel>
+                                </Button>
+                                <Label x:Name="label34" Content="Telefono:" HorizontalAlignment="Left" Margin="8,382,0,0" VerticalAlignment="Top"/>
+                                <TextBox x:Name="textBox25" HorizontalAlignment="Left" Height="23" Margin="144,386,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="280"/>
+
+                            </Grid>
+                        </TabItem>
+                    </TabControl>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Enviar">
+                <Grid Background="#FFE5E5E5">
+                    <TabControl x:Name="tabControl2" HorizontalAlignment="Left" Height="511" VerticalAlignment="Top" Width="788">
+                        <TabItem Header="Correo Francisco" Height="22" VerticalAlignment="Bottom">
+                            <Grid Background="#FFE5E5E5">
+                                <Rectangle Fill="#FFF4F4F5" Margin="170,133,169,132" Stroke="#FFF4F4F5"/>
+                                <Label x:Name="label39" Content="Tu direccion de correo electornico:" Margin="282,148,268,0" VerticalAlignment="Top" FontSize="14"/>
+                                <TextBox x:Name="textBox28" Height="23" Margin="240,182,240,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+                                <Label x:Name="label40" Content="Clave de acceso a tu correo:" Margin="308,238,282,0" VerticalAlignment="Top" FontSize="14"/>
+                                <PasswordBox x:Name="passwordBox1" HorizontalAlignment="Left" Margin="240,272,0,0" VerticalAlignment="Top" Height="23" Width="308"/>
+                                <Button x:Name="button8" Margin="282,316,282,0" VerticalAlignment="Top" BorderBrush="#FFDDDDDD">
+                                    <DockPanel>
+                                        <Image Source="Icon/sobre.png" Width="18" Height="18"></Image>
+                                        <TextBlock>Probar conexion</TextBlock>
+                                    </DockPanel>
+                                </Button>
+                                <Label x:Name="label41" Content="NOTA: El programa solo usa estos datos para enviar la factura por email, nunca accede a tu informacion personal." Margin="86,354,56,0" VerticalAlignment="Top"/>
+
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Correo Luis">
+                            <Grid Background="#FFE5E5E5">
+                                <Rectangle Fill="#FFF4F4F5" Margin="170,133,169,132" Stroke="#FFF4F4F5"/>
+                                <Label x:Name="label42" Content="Tu direccion de correo electornico:" Margin="282,148,268,0" VerticalAlignment="Top" FontSize="14"/>
+                                <TextBox x:Name="textBox30" Height="23" Margin="240,182,240,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+                                <Label x:Name="label43" Content="Clave de acceso a tu correo:" Margin="308,238,282,0" VerticalAlignment="Top" FontSize="14"/>
+                                <PasswordBox x:Name="passwordBox3" HorizontalAlignment="Left" Margin="240,272,0,0" VerticalAlignment="Top" Height="23" Width="308"/>
+                                <Button x:Name="button9" Margin="282,316,282,0" VerticalAlignment="Top" BorderBrush="#FFDDDDDD">
+                                    <DockPanel>
+                                        <Image Source="Icon/sobre.png" Width="18" Height="18"></Image>
+                                        <TextBlock>Probar conexion</TextBlock>
+                                    </DockPanel>
+                                </Button>
+                                <Label x:Name="label44" Content="NOTA: El programa solo usa estos datos para enviar la factura por email, nunca accede a tu informacion personal." Margin="84,370,58,0" VerticalAlignment="Top"/>
+
+                            </Grid>
+                        </TabItem>
+                    </TabControl>
+
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>

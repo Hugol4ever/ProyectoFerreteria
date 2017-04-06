@@ -1,0 +1,21 @@
+﻿<Window x:Class="FerreteriaWPF.Logotipo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FerreteriaWPF"
+        mc:Ignorable="d"
+        Title="Logotipo" Height="300" Width="500" Background="White">
+    <Grid>
+        <Label x:Name="label" Content="Logotipo del programa" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="24" FontWeight="Bold" Foreground="#FFFFFFFF" Background="#FF1C089C" Width="492"/>
+        <Label x:Name="label1" Content="Puedes cambiar el logotipo del programa (Aparece en la esquina superior izquierda)." HorizontalAlignment="Left" Margin="10,52,0,0" VerticalAlignment="Top" Foreground="Gray"/>
+        <Label x:Name="label2" Content="Imagen de logotipo" HorizontalAlignment="Left" Margin="10,98,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="button" HorizontalAlignment="Left" Margin="10,129,0,0" VerticalAlignment="Top" Width="254" Background="#FFF5F1F1" BorderBrush="#FFF5F1F1">
+            <DockPanel>
+                <Image Source="Icon/research.png" Height="18" Width="18"></Image>
+                <TextBlock>Busca tu logotipo</TextBlock>
+            </DockPanel>
+        </Button>
+
+    </Grid>
+</Window>

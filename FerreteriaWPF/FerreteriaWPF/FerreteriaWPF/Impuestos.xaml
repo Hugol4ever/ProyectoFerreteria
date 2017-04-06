@@ -1,0 +1,24 @@
+﻿<Window x:Class="FerreteriaWPF.Impuestos"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FerreteriaWPF"
+        mc:Ignorable="d"
+        Title="Impuestos" Height="393.08" Width="754.325" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Background="White">
+    <Grid>
+        <Label x:Name="label" Content="IMPUESTO" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="24" Foreground="#FFFFFFFF" Background="#FF1C089C" Width="748"/>
+        <CheckBox x:Name="checkBox" Content="Mis productos manejan impuesto (IVA). " HorizontalAlignment="Left" Margin="10,82,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1" Content="IVA" HorizontalAlignment="Left" Margin="27,102,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label2" Content="16%" HorizontalAlignment="Left" Margin="60,102,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="checkBox1" Content="Desglosar los impuestos en el ticket de venta." HorizontalAlignment="Left" Margin="10,146,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="checkBox2" Content="Deseo ingresar mis precios de venta con impuestos incluidos." HorizontalAlignment="Left" Margin="10,166,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="button"  HorizontalAlignment="Left" Margin="18,212,0,0" VerticalAlignment="Top" Width="75" BorderBrush="#FFDDDDDD">
+            <DockPanel>
+                <Image Source="Icon/checked (1).png" Height="18" Width="18"></Image>
+                <TextBlock>Guardar</TextBlock>
+            </DockPanel>
+        </Button>
+
+    </Grid>
+</Window>

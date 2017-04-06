@@ -1,0 +1,220 @@
+﻿<Window x:Class="FerreteriaWPF.PantallaPrincipal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FerreteriaWPF"
+        mc:Ignorable="d"
+        Title="+VENTAS" WindowStartupLocation="CenterScreen" Visibility="Visible" ResizeMode="NoResize" SizeToContent="WidthAndHeight"  HorizontalContentAlignment="Stretch" AllowsTransparency="True" WindowStyle="None" AutomationProperties.IsOffscreenBehavior="Onscreen" VerticalContentAlignment="Stretch" WindowState="Normal" AutomationProperties.AutomationId="">
+    <Grid Margin="2,0">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                <GradientStop Color="#FFBAB4DE"/>
+                <GradientStop Color="White" Offset="0.365"/>
+                <GradientStop Color="White" Offset="0.629"/>
+                <GradientStop Color="#FFE2F0FF" Offset="0.89"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Rectangle Fill="#FFE2E2E2" Height="68" Stroke="#FFE2E2E2" Margin="0,0,0,657"/>
+        <Label x:Name="label" Content="Usuario:" Margin="1220,7,0,0" Foreground="#FF1F2385" FontSize="14" FontWeight="Bold" RenderTransformOrigin="0.859,0.415" Width="152" VerticalAlignment="Top">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.102"/>
+                    <TranslateTransform X="-0.004" Y="-0.045"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label x:Name="label1" Content="Nombre de usuario" Height="26" Margin="1189,37,27,0" Width="156" FontWeight="Bold" VerticalAlignment="Top"/>
+        <Menu x:Name="menu" Height="30" Margin="0,68,0,627">
+
+            <MenuItem Name="Clientes" Header="Clientes" BorderThickness="0,0,0,0" Click="ClientesM_Click" Margin="0">
+                <MenuItem.Icon >
+                    <Image Source = " Icon\equipo.png " Width="18" Height="18"/>
+                </MenuItem.Icon >
+            </MenuItem>
+            <MenuItem Name="Productos" Header="Productos" Click="ProductosM_Click">
+                <MenuItem.Icon >
+                    <Image Source = " Icon\caja.png " Width="18" Height="18"/>
+                </MenuItem.Icon >
+            </MenuItem>
+            <MenuItem Name="Inventario" Header="Inventario" Click="InventarioM_Click">
+                <MenuItem.Icon >
+                    <Image Source = " Icon\lista-de-verificacion.png " Width="18" Height="18"/>
+                </MenuItem.Icon >
+            </MenuItem>
+            <MenuItem Name="Facturas" Header="Facturas" Click="FacturaM_Click">
+                <MenuItem.Icon >
+                    <Image Source = " Icon\invoice.png " Width="18" Height="18"/>
+                </MenuItem.Icon >
+            </MenuItem>
+            <MenuItem x:Name="Reportes" Header="Reportes" Click="ReporteM_Click">
+                <MenuItem.Icon >
+                    <Image Source = " Icon\bar-chart24.png " Width="18" Height="18"/>
+                </MenuItem.Icon >
+            </MenuItem>
+            <MenuItem Header="Configuracion" >
+                <MenuItem.Icon >
+                    <Image Source = " Icon\ajustes.png " Width="16" Height="16"/>
+                </MenuItem.Icon >
+                <MenuItem Header="Opciones habilitadas" Click="OhSm_Click">
+                    <MenuItem.Icon >
+                        <Image Source = " Icon\settings24.png " Width="18" Height="18"/>
+                    </MenuItem.Icon >
+                </MenuItem>
+                <MenuItem Header="Usuarios" Click="UsM_Click">
+                    <MenuItem.Icon >
+                        <Image Source = " Icon\hombre-de-negocios.png " Width="18" Height="18"/>
+                    </MenuItem.Icon >
+                </MenuItem>
+                <MenuItem Header="Config. de usuario" Click="consU_Click">
+                    <MenuItem.Icon>
+                        <Image  Source = " Icon\usuario.png " Width="18" Height="18"></Image>
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="Facturacion" Click="FacSm_Click">
+                    <MenuItem.Icon >
+                        <Image Source = " Icon\invoice.png " Width="18" Height="18"/>
+                    </MenuItem.Icon >
+                </MenuItem>
+                <MenuItem Header="Ticket" Click="TsM_Click">
+                    <MenuItem.Icon >
+                        <Image Source = " Icon\factura.png " Width="18" Height="18"/>
+                    </MenuItem.Icon >
+                </MenuItem>
+                <MenuItem Header="Unidades de medida" Click="UmSm_Click">
+                    <MenuItem.Icon >
+                        <Image Source = " Icon\escala.png " Width="18" Height="18"/>
+                    </MenuItem.Icon >
+                </MenuItem>
+                <MenuItem Header="Impuestos" Click="IsM_Click">
+                    <MenuItem.Icon >
+                        <Image Source = " Icon\monedas.png " Width="18" Height="18"/>
+                    </MenuItem.Icon >
+                </MenuItem>
+                <MenuItem Header="Formas de pago" Click="FpSm_Click">
+                    <MenuItem.Icon >
+                        <Image Source = " Icon\metodo-de-pago.png " Width="18" Height="18"/>
+                    </MenuItem.Icon >
+                </MenuItem>
+                <MenuItem Header="Simbolo de moneda" Click="SmSm_Click">
+                    <MenuItem.Icon >
+                        <Image Source = " Icon\simbolo-de-dolar.png " Width="18" Height="18"/>
+                    </MenuItem.Icon >
+                </MenuItem>
+                <MenuItem Header="Logotipo" Click="LsM_Click">
+                    <MenuItem.Icon>
+                        <Image Source = "Icon/picture.png " Width="18" Height="18"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+            </MenuItem>
+            <MenuItem x:Name="Salir" Header="Salir" BorderThickness="0,0,0,0" Click="Salir_Click" Margin="0">
+                <MenuItem.Icon >
+                    <Image Source = " Icon\cancel (1).png " Width="16" Height="16"/>
+                </MenuItem.Icon>
+            </MenuItem>
+        </Menu>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="32" Margin="10,103,0,0" VerticalAlignment="Top" Width="32" Source="Icon/barcode (1).png"/>
+        <Label x:Name="label2" Content="Código del producto o nombre:" HorizontalAlignment="Left" Margin="42,103,0,0" VerticalAlignment="Top" Height="32" Foreground="#FF6E6D6D"/>
+        <TextBox x:Name="textBox" Height="30" Margin="224,105,768,590" TextWrapping="Wrap" Width="380"/>
+        <Button x:Name="button1" Margin="624,105,589,590" Width="159" Height="30" BorderBrush="#FFDDDDDD" Click="button1_Click">
+            <DockPanel>
+                <Image Source="Icon/checked (1).png"  Height="18" Width="18"></Image>
+                <TextBlock><Run Text="Agregar Producto"/></TextBlock>
+            </DockPanel>
+        </Button>
+        <Menu x:Name="menu1" Height="30" Margin="0,140,0,555" Background="#FFE2E2E2">
+            <Button Name="ArticuloComún" Width="123" BorderBrush="#FFE2E2E2" Click="ArticuloComún_Click">
+                <DockPanel>
+                    <Image Source="Icon/carro-de-entregas.png" Height="18" Width="18"></Image>
+                    <TextBlock Width="89"> Articulo Comun</TextBlock>
+                </DockPanel>
+            </Button>
+            <Button Name="Buscar" Width="100" BorderBrush="#FFE2E2E2" Click="Buscar_Click">
+                <DockPanel>
+                    <Image Source="Icon/research.png" Height="18" Width="18"></Image>
+                    <TextBlock> Buscar</TextBlock>
+                </DockPanel>
+            </Button>
+            <Button Name="Mayoreo" Width="100" BorderBrush="#FFE2E2E2">
+                <DockPanel>
+                    <Image Source="Icon/list24m.png" Height="18" Width="18"></Image>
+                    <TextBlock> Mayoreo</TextBlock>
+                </DockPanel>
+            </Button>
+            <Button Name="Salidas" Width="100" BorderBrush="#FFE2E2E2" Click="Salidas_Click" Cursor="Hand">
+                <DockPanel>
+                    <Image Source="Icon/dolar.png" Height="18" Width="18"></Image>
+                    <TextBlock> Salidas</TextBlock>
+                </DockPanel>
+            </Button>
+            <Button Name="BorrarArticulo" Width="114" BorderBrush="#FFE2E2E2">
+                <DockPanel>
+                    <Image Source="Icon/goma-de-borrar.png" Height="18" Width="18"></Image>
+                    <TextBlock> Borrar Articulo</TextBlock>
+                </DockPanel>
+            </Button>
+            <Button Name="ReimprimirUltimaVenta" BorderBrush="#FFE2E2E2">
+                <DockPanel>
+                    <Image Source="Icon/printer (1).png" Height="18" Width="18"></Image>
+                    <TextBlock> Reimprimir ultima venta</TextBlock>
+                </DockPanel>
+            </Button>
+            <Button BorderBrush="#FFDDDDDD"  Click="Button_Click">
+                <DockPanel>
+                    <Image Source="Icon/list24.png" Width="18" Height="18"></Image>
+                    <TextBlock>Ventas del dia</TextBlock>
+                </DockPanel>
+            </Button>
+
+            <Button BorderBrush="#FFDDDDDD">
+                <DockPanel>
+                    <Image Source="Icon/discount.png" Width="18" Height="18"></Image>
+                    <TextBlock>Descuento</TextBlock>
+                </DockPanel>
+            </Button>
+
+        </Menu>
+        <Rectangle Fill="#FFE2E2E2" Height="101" Margin="0,624,0,0" Stroke="#FFE2E2E2"/>
+        <Label x:Name="label3" Content="$ 0.00" Height="80" Margin="1173,629,10,16" Width="189" FontSize="52" Foreground="#FF379B64"/>
+        <Button BorderBrush="#FFDDDDDD" Click="Button_Click_1" Margin="806,638,409,35" Width="157" Height="52">
+            <DockPanel>
+                <Image Source="Icon/Portapapeles.png" Width="18" Height="18"></Image>
+                <TextBlock>Cotización</TextBlock>
+            </DockPanel>
+        </Button>
+        <Button x:Name="button2" Margin="968,638,247,35" Width="157" Height="52" BorderBrush="#FFDDDDDD" Click="button2_Click">
+            <DockPanel>
+                <Image Source="Icon/cashbox (1).png" Height="25" Width="25" RenderTransformOrigin="0.4,0.48"></Image>
+                <TextBlock FontSize="16" Foreground="#FF379B64"> Cobrar</TextBlock>
+            </DockPanel>
+        </Button>
+
+        <Label x:Name="label4" Content="TOTAL:&#xD;&#xA;" HorizontalAlignment="Left" Margin="14,638,0,0" VerticalAlignment="Top" Height="26" FontWeight="Bold"/>
+        <Label x:Name="label5" Content="PAGÓ CON:" HorizontalAlignment="Left" Margin="126,638,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label x:Name="label6" Content="CAMBIO:" HorizontalAlignment="Left" Margin="261,638,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label x:Name="label7" Content="$0.00" HorizontalAlignment="Left" Margin="17,659,0,0" VerticalAlignment="Top" Width="48" Foreground="#FF379B64"/>
+        <Label x:Name="label8" Content="$0.00" HorizontalAlignment="Left" Margin="141,660,0,0" VerticalAlignment="Top" Foreground="#FF379B64"/>
+        <Label x:Name="label9" Content="$0.00" HorizontalAlignment="Left" Margin="261,659,0,0" VerticalAlignment="Top" Foreground="#FF379B64"/>
+        <Label x:Name="label10" Content="0 " HorizontalAlignment="Left" Margin="10,603,0,0" VerticalAlignment="Top" Foreground="#FF379B64" FontWeight="Bold" RenderTransformOrigin="2.8,0.538"/>
+        <Label x:Name="label11" Content="Productos en la venta actual." HorizontalAlignment="Left" Margin="35,600,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+        <DataGrid x:Name="dataGrid" Margin="-3,187,0,135" Width="1375" IsSynchronizedWithCurrentItem="True" BorderBrush="#FFE2E2E2" Height="403">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Código de barras" Width="150"/>
+                <DataGridTextColumn Header="Descripción o nombre" Width="300"/>
+                <DataGridTextColumn Header="Precio venta" Width="120"/>
+                <DataGridTextColumn Header="Cantidad" Width="100"/>
+                <DataGridTextColumn Header="Importe" Width="120"/>
+                <DataGridTextColumn Header="En inventario" Width="100"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label x:Name="label12" Content="$0.00" Margin="1279,590,10,0" VerticalAlignment="Top" Height="34" Width="83"/>
+        <Image x:Name="image1" HorizontalAlignment="Center" Height="63" VerticalAlignment="Top" Width="339" Source="Icon/Logo2.bmp" RenderTransformOrigin="0.535,0.838" Stretch="UniformToFill"/>
+        <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Margin="816,106,0,0" VerticalAlignment="Top" Width="74" Click="button_Click_2"/>
+
+
+
+
+    </Grid>
+</Window>

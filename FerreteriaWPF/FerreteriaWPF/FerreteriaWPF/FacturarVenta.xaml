@@ -1,0 +1,50 @@
+﻿<Window x:Class="FerreteriaWPF.FacturarVenta"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FerreteriaWPF"
+        mc:Ignorable="d"
+        Title="FacturarVenta" Height="700" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label x:Name="label" Content="FACTURAR VENTA" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" FontSize="24" FontWeight="Bold" Background="#FF461E76" Width="794" Height="52"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="10,80,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="228"/>
+        <Button x:Name="button" HorizontalAlignment="Left" Margin="243,80,0,0" VerticalAlignment="Top" Width="30">
+            <DockPanel>
+                <Image Source="Icon/research.png" Width="18" Height="18"></Image>
+            </DockPanel>
+        </Button>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="0,140,0,0" VerticalAlignment="Top" Height="452" Width="794" BorderBrush="#FFF0F0F0">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="RFC"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="NOMBRE"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="CIUDAD / ESTADO"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="C.P."/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="button1"  HorizontalAlignment="Left" Margin="190,623,0,0" VerticalAlignment="Top" BorderBrush="#FFDDDDDD" Width="104" Click="nuevoCfac_Click" Height="27">
+            <DockPanel>
+                <Image Source="Icon/user (4).png" Width="18" Height="18"></Image>
+                <TextBlock>Nuevo cliente</TextBlock>
+            </DockPanel>
+        </Button>
+        <Button x:Name="button2"  HorizontalAlignment="Left" Margin="359,623,0,0" VerticalAlignment="Top" Width="123" BorderBrush="#FFDDDDDD" Click="modCfac_Click" Height="27">
+            <DockPanel>
+                <Image Source="Icon/user (3).png" Width="18" Height="18"></Image>
+                <TextBlock>Modificar cliente</TextBlock>
+            </DockPanel>
+        </Button>
+        <Button x:Name="button3" BorderBrush="#FFDDDDDD" HorizontalAlignment="Left" Margin="10,623,0,0" VerticalAlignment="Top" Width="118" Height="27">
+            <DockPanel>
+                <Image Source="Icon/error.png" Width="18" Height="18"></Image>
+                <TextBlock>Cancelar</TextBlock>
+            </DockPanel>
+        </Button>
+        <Button x:Name="button4" BorderBrush="#FFDDDDDD" HorizontalAlignment="Left" Margin="542,623,0,0" VerticalAlignment="Top" Width="224" Height="27" Click="button4_Click">
+            <DockPanel>
+                <Image Source="Icon/checked (1).png" Width="18" Height="18"></Image>
+                <TextBlock>Seleccionar cliente para factura</TextBlock>
+            </DockPanel>
+        </Button>
+    </Grid>
+</Window>

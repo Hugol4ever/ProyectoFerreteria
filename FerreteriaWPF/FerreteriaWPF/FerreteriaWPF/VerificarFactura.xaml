@@ -1,0 +1,35 @@
+﻿<Window x:Class="FerreteriaWPF.VerificarFactura"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FerreteriaWPF"
+        mc:Ignorable="d"
+        Title="VerificarFactura" Height="400" Width="500" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label x:Name="label0" Content="FACTURAR VENTA" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" FontSize="24" FontWeight="Bold" Background="#FF461E76" Width="494" Height="40"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="128" Margin="186,121,0,0" VerticalAlignment="Top" Width="128" Source="Icon/invoice2.png"/>
+        <Label x:Name="label" Content="Haga clic en la siguiente imagen si desea ver una vista previa de su factura o haga clic" HorizontalAlignment="Left" Margin="10,39,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1" Content="en 'Generar factura' para continuar... " HorizontalAlignment="Left" Margin="10,65,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label2" Content="Factura" HorizontalAlignment="Left" Margin="196,112,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="button" BorderBrush="#FFDDDDDD"  HorizontalAlignment="Left" Margin="10,317,0,0" VerticalAlignment="Top" Width="118" Height="27">
+            <DockPanel>
+                <Image Source="Icon/Error.png" Width="18" Height="18"></Image>
+                <TextBlock>Cancelar</TextBlock>
+            </DockPanel>
+        </Button>
+        <Button x:Name="button1" BorderBrush="#FFDDDDDD"  HorizontalAlignment="Left" Margin="186,317,0,0" VerticalAlignment="Top" Width="118" Height="27">
+            <DockPanel>
+                <Image Source="Icon/back.png" Width="18" Height="18"></Image>
+                <TextBlock>Regresar</TextBlock>
+            </DockPanel>
+        </Button>
+        <Button x:Name="button2" BorderBrush="#FFDDDDDD"  HorizontalAlignment="Left" Margin="355,317,0,0" VerticalAlignment="Top" Width="118" Height="27">
+            <DockPanel>
+                <Image Source="Icon/checked (1).png" Width="18" Height="18"></Image>
+                <TextBlock>Generar factura</TextBlock>
+            </DockPanel>
+        </Button>
+        <Button x:Name="button3" BorderBrush="#FFDDDDDD" Content="Vista preliminar..." HorizontalAlignment="Left" Margin="186,254,0,0" VerticalAlignment="Top" Width="128"/>
+    </Grid>
+</Window>

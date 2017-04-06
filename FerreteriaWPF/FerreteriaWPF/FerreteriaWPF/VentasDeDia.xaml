@@ -1,0 +1,51 @@
+﻿<Window x:Class="FerreteriaWPF.VentasDeDia"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FerreteriaWPF"
+        mc:Ignorable="d"
+        Title="VentasDeDia" Height="600" Width="600" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label x:Name="label" Content="VENTAS POR DIA" HorizontalAlignment="Left" VerticalAlignment="Top" Width="594" Height="36" FontWeight="Bold" FontSize="14" Foreground="White" Background="#FF7F9CAC"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="30" Margin="10,62,0,0" VerticalAlignment="Top" Width="30" Source="Icon/research.png"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="38" Margin="45,54,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="510"/>
+        <Menu x:Name="menu" HorizontalAlignment="Left" Height="28" Margin="0,110,0,0" VerticalAlignment="Top" Width="594">
+            <Button BorderBrush="#FFDDDDDD" HorizontalAlignment="Left" Margin="25,0,0,0">
+                <DockPanel>
+                    <Image Source="Icon/error.png" Width="18" Height="18"></Image>
+                    <TextBlock>Cancelar venta</TextBlock>
+                </DockPanel>
+            </Button>
+            <Button BorderBrush="#FFDDDDDD" HorizontalAlignment="Left" Margin="40,0,0,0">
+                <DockPanel>
+                    <Image Source="Icon/editar.png" Width="18" Height="18"></Image>
+                    <TextBlock>Modificar venta</TextBlock>
+                </DockPanel>
+            </Button>
+            <Button BorderBrush="#FFDDDDDD" Margin="40,0,0,0" Click="Button_Click">
+                <DockPanel>
+                    <Image Source="Icon/invoice.png" Width="18" Height="18"></Image>
+                    <TextBlock>Facturar</TextBlock>
+                </DockPanel>
+            </Button>
+            <Button BorderBrush="#FFDDDDDD" Margin="40,0,0,0">
+                <DockPanel>
+                    <Image Source="Icon/printer (1).png" Width="18" Height="18"></Image>
+                    <TextBlock>Imprimir copia</TextBlock>
+                </DockPanel>
+            </Button>
+        </Menu>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="0,156,0,0" VerticalAlignment="Top" Height="270" Width="594"/>
+        <DatePicker HorizontalAlignment="Left" Margin="65,450,0,0" VerticalAlignment="Top" Width="333"/>
+        <Label x:Name="label1" Content="Del dia:" HorizontalAlignment="Left" Margin="10,448,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="button" HorizontalAlignment="Left" Margin="10,498,0,0" VerticalAlignment="Top" Width="183" Height="34" BorderBrush="#FFDDDDDD">
+            <DockPanel>
+                <Image Source="Icon/error.png" Width="20" Height="20"></Image>
+                <TextBlock>Cerrar ventana</TextBlock>
+            </DockPanel>
+        </Button>
+
+
+    </Grid>
+</Window>

@@ -1,0 +1,28 @@
+﻿<Window x:Class="FerreteriaWPF.ConFactura"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FerreteriaWPF"
+        mc:Ignorable="d"
+        Title="ConFactura" Height="577.5" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Background="White">
+    <Grid HorizontalAlignment="Center">
+        <Rectangle Fill="#FFCBCACA" HorizontalAlignment="Left" Height="156" Margin="0,80,0,0" Stroke="#FFCBCACA" VerticalAlignment="Top" Width="794"/>
+        <Label x:Name="label" Content="FACTURA ELECTRONICA" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="24" FontWeight="Bold" Foreground="White" Width="794" Background="#FF1C089C"/>
+        <Label x:Name="label1" Content="Timbres disponibles de Francisco:" Margin="10,140,582,0" VerticalAlignment="Top" Height="40" HorizontalAlignment="Center" RenderTransformOrigin="0.742,0.474" Width="202"/>
+        <Label x:Name="label2" Content="0" Margin="217,110,26,0" VerticalAlignment="Top" FontSize="60" RenderTransformOrigin="0.655,0.578"/>
+        <Rectangle Fill="#FFCBCACA" HorizontalAlignment="Left" Height="156" Margin="0,253,0,0" Stroke="#FFCBCACA" VerticalAlignment="Top" Width="794"/>
+        <Label x:Name="label3" Content="Timbres disponibles de Luis:" Margin="10,310,582,0" VerticalAlignment="Top" Height="40" HorizontalAlignment="Center" RenderTransformOrigin="0.742,0.474" Width="202"/>
+        <Label x:Name="label4" Content="0" Margin="217,280,26,0" VerticalAlignment="Top" FontSize="60" RenderTransformOrigin="0.655,0.578"/>
+        <Button x:Name="button"  HorizontalAlignment="Left" Margin="10,425,0,0" VerticalAlignment="Top" Width="294" Height="31" Click="button_Click">
+            <DockPanel>
+                <Image Source="Icon\invoice.png" Width="18" Height="18"></Image>
+                <TextBlock>Modificar configuracion de factura electronica</TextBlock>
+            </DockPanel>
+        </Button>
+        <CheckBox x:Name="checkBox" Content="Verificar que exista la factura global mensual del mes anteriorantes de poder continuar facturando." HorizontalAlignment="Left" Margin="10,475,0,0" VerticalAlignment="Top" Width="542"/>
+        <CheckBox x:Name="checkBox1" Content="Enviar automaticamente las facturas al cliente cuando tenga correo electronico asignado." HorizontalAlignment="Left" Margin="10,495,0,0" VerticalAlignment="Top"/>
+
+
+    </Grid>
+</Window>

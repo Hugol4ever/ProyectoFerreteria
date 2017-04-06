@@ -1,0 +1,44 @@
+﻿<Window x:Class="FerreteriaWPF.Clientes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FerreteriaWPF"
+        mc:Ignorable="d"
+        Title="Clientes" Height="468" Width="421.5" ResizeMode="CanMinimize" SizeToContent="Width" WindowStartupLocation="CenterScreen" Background="White">
+    <Grid Background="White">
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="0,91,0,0" VerticalAlignment="Top" Height="223" Width="416" HeadersVisibility="None"/>
+        <Button x:Name="button" HorizontalAlignment="Left" Margin="5,364,0,0" VerticalAlignment="Top" Width="194" Height="24" BorderBrush="#FFDDDDDD" Click="button_Click" Cursor="Hand">
+            <DockPanel>
+                <Image Source="Icon/user (6).png" Height="20" Width="20"/>
+                <TextBlock><Run Text="Estado de cuenta"/></TextBlock>
+            </DockPanel>
+        </Button>
+        <Button x:Name="button1" HorizontalAlignment="Left" Margin="213,402,0,0" VerticalAlignment="Top" Width="198" Height="24" BorderBrush="#FFDDDDDD" Cursor="Hand">
+            <DockPanel>
+                <Image Source="Icon/user (5).png" Height="20" Width="20"/>
+                <TextBlock><Run Text="Eliminar Cliente"/></TextBlock>
+            </DockPanel>
+        </Button>
+        <Button x:Name="button2" HorizontalAlignment="Left" Margin="213,364,0,0" VerticalAlignment="Top" Width="198" Height="24" BorderBrush="#FFDDDDDD" Click="button2_Click" Cursor="Hand">
+            <DockPanel>
+                <Image Source="Icon/user (3).png" Height="20" Width="20"/>
+                <TextBlock><Run Text="Modificar Cliente"/></TextBlock>
+            </DockPanel>
+        </Button>
+        <Button x:Name="button3" HorizontalAlignment="Left" Margin="5,402,0,0" VerticalAlignment="Top" Width="194" Height="24" BorderBrush="#FFDDDDDD" Click="button3_Click" Cursor="Hand">
+            <DockPanel>
+                <Image Source="Icon/user (4).png" Height="20" Width="20"/>
+                <TextBlock><Run Text="Nuevo Cliente"/></TextBlock>
+            </DockPanel>
+        </Button>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="24" Margin="0,67,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="416"/>
+        <Label x:Name="label" Content="Busca un cliente" HorizontalAlignment="Left" VerticalAlignment="Top" Width="416" Height="43" FontSize="24" FontWeight="Bold" FontStyle="Italic" Foreground="White" HorizontalContentAlignment="Center" Background="#FF064068"/>
+        <Button x:Name="button4" HorizontalAlignment="Left" Margin="5,328,0,0" VerticalAlignment="Top" Width="406" Height="24" BorderBrush="#FFDDDDDD" Cursor="Hand">
+            <DockPanel>
+                <Image Source="Icon/user (2).png" Height="20" Width="20"/>
+                <TextBlock><Run Text="Buscar Cliente"/></TextBlock>
+            </DockPanel>
+        </Button>
+    </Grid>
+</Window>
